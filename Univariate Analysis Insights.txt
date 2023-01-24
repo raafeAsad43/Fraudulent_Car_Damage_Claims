@@ -1,0 +1,28 @@
+Data columns (total 25 columns):
+ #   Column                   Non-Null Count  Dtype  
+---  ------                   --------------  -----  
+ 0   claim_number          17998 non-null  int64   # not useful
+ 1   age_of_driver            17998 non-null  int64   # Drivers above age of 100 are outliers
+ 2   gender                   17998 non-null  object  # Around 9k males
+ 3   marital_status           17993 non-null  float64 # More than 12k are married
+ 4   safty_rating             17998 non-null  int64   # Not useful 
+ 5   annual_income            17998 non-null  int64   # Income at 0, or less than 0, or less than 1k are outliers
+ 6   high_education_ind       17998 non-null  int64   # more high educated persons
+ 7   address_change_ind       17998 non-null  int64   # more people have changed residence
+ 8   living_status            17998 non-null  object  # Around 10k people have their own residence
+ 9   zip_code                 17998 non-null  int64   # not useful
+ 10  claim_date               17998 non-null  object  # not useful
+ 11  claim_day_of_week        17998 non-null  object  # Around 2500 each day
+ 12  accident_site            17998 non-null  object  # More than 8k accidents on local roads, around 5k on parking lots and around 4k on highway
+ 13  past_num_of_claims       17998 non-null  int64   # More than 12k people have no past claims
+ 14  witness_present_ind      17866 non-null  float64 # Witness not present on around 14k records
+ 15  liab_prct                17998 non-null  int64   # not useful
+ 16  channel                  17998 non-null  object  # Around 9.5k policies from brokers, 6k from phones, 3k from online sources
+ 17  policy_report_filed_ind  17998 non-null  int64   # More than 10k people have filed policy reports
+ 18  claim_est_payout         17981 non-null  float64 # not useful
+ 19  age_of_vehicle           17990 non-null  float64 # Most vehicles are 5 to 6 years old
+ 20  vehicle_category         17998 non-null  object  # Equal distribution among compact, large, and medium vehicles
+ 21  vehicle_price            17998 non-null  float64 # not useful
+ 22  vehicle_color            17998 non-null  object   # lets keep it for now
+ 23  vehicle_weight           17998 non-null  float64  # not useful
+ 24  fraud                    17998 non-null  int64    # Around 15k people not deemed as fraudulent
